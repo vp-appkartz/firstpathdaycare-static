@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import './FloatingIcons.css';
 
 const FloatingIcons = () => {
@@ -10,6 +10,9 @@ const FloatingIcons = () => {
       </a>
       <a href="mailto:info.firstpathdaycare@gmail.com" className="social-floating-icon mail" aria-label="Email Us">
         <Mail size={20} />
+      </a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=4741+50+Ave+%23205,+Calmar,+AB+T0C+0V0" target="_blank" rel="noreferrer" className="social-floating-icon map" aria-label="Get Directions">
+        <MapPin size={20} />
       </a>
       <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-floating-icon facebook" aria-label="Facebook">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>

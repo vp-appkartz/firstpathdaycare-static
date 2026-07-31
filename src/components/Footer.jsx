@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <MapPin size={18} className="contact-icon" />
-                <span>Calmar, Alberta</span>
+                <span>4741 50 Ave #205, Calmar, AB T0C 0V0</span>
               </li>
               <li>
                 <Phone size={18} className="contact-icon" />

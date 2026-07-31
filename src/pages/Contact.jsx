@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className="info-icon"><MapPin size={24} /></div>
                 <div>
                   <h3>Location</h3>
-                  <p>Calmar, Alberta</p>
+                  <p>4741 50 Ave #205, Calmar, AB T0C 0V0</p>
                 </div>
               </div>
 
