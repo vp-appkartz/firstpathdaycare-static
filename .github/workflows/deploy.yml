@@ -24,11 +24,6 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Debug FTP Directory Structure
-        run: |
-          sudo apt-get install -y lftp
-          lftp -c "set ssl:verify-certificate no; open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_SERVER }}; echo '--- ROOT ---'; ls -la; echo '--- DOMAINS ---'; ls -la domains/ || true; echo '--- PUBLIC_HTML ---'; ls -la public_html/ || true"
-
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
