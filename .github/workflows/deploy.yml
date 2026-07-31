@@ -24,15 +24,6 @@ jobs:
       - name: Build Project
         run: npm run build
 
-      - name: Test FTP Structure
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        run: |
-          npm install basic-ftp
-          node test-ftp.js
-
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -40,5 +31,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./domains/firstpathdaycare.ca/public_html/
+          server-dir: ./
           dangerous-clean-slate: true
