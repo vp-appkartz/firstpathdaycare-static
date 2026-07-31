@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <MapPin size={18} className="contact-icon" />
-                <span>4741 50 Ave #205, Calmar, AB T0C 0V0</span>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=4741+50+Ave+%23205,+Calmar,+AB+T0C+0V0" target="_blank" rel="noreferrer">4741 50 Ave #205, Calmar, AB T0C 0V0</a>
               </li>
               <li>
                 <Phone size={18} className="contact-icon" />

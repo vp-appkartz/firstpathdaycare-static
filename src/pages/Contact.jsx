@@ -25,7 +25,7 @@ const Contact = () => {
                 <div className="info-icon"><MapPin size={24} /></div>
                 <div>
                   <h3>Location</h3>
-                  <p>4741 50 Ave #205, Calmar, AB T0C 0V0</p>
+                  <p><a href="https://www.google.com/maps/dir/?api=1&destination=4741+50+Ave+%23205,+Calmar,+AB+T0C+0V0" target="_blank" rel="noreferrer">4741 50 Ave #205, Calmar, AB T0C 0V0</a></p>
                 </div>
               </div>
 
